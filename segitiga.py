@@ -6,7 +6,7 @@ tinggi = float(input("masukan tinggi: "))
 alas = float(input("masukan alas: "))
 sisi = float(input("masukan sisi: "))
 
-alas = 1/2 * alas * tinggi
+luas = 1/2 * alas * tinggi
 alas = sisi*3
 
 print('luas',luas,'cm2')
