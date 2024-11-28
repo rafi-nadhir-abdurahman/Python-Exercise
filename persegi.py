@@ -1,10 +1,14 @@
-print("="*40)
-print("PROGRAM PERSEGI")
-print("="*40)
-sisi = float(input("masukan sisi: "))
+def persegi():
+    print('=============================')
+    print('====== PROGRAM PERSEGI ======')
+    print('=============================\n')
 
-luas = sisi*sisi
-keliling = 4*sisi
 
-print('luas',luas,'cm2')
-print('keliling',keliling,'cm2')
+    s = int(input('Masukan sisi : '))
+    luas = lambda s : s * s
+    keliling = lambda s : 4 * s
+
+    print(f'luas : {luas(s)} cm2')
+    print(f'Keliling : {keliling(s)} cm2\n')
+
+persegi()

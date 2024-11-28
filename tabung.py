@@ -1,13 +1,14 @@
-print('='*40)
-print('PROGRAM TABUNG')
-print('='*40)
+def tabung():
+    print('=============================')
+    print('====== GEOMETRI TABUNG ======')
+    print('=============================\n')
 
-R = float(input('masukan jari jari: '))
-T = float(input('masukan tinggi: '))
+    j2 = float(input('masukan jari jari : '))
+    t = float(input('masukan tinggi : '))
+    volume = lambda j2,t : 2 * 3.14 * j2 * t
+    luas = lambda j2,t : 3.14 * j2 * j2 + 2 * 3.14 * j2 * t
 
-PHI = 3.14
-volume = PHI * R * R * T
-LP = (2 * PHI * R * T) + (2 *(2 * PHI))
+    print(f'volume : {round (volume(j2,t), 2)} cm3')
+    print(f'luas : {round (luas(j2,t), 2)} cm2')
 
-print('volume',volume,'cm2')
-print('LP:',LP,'cm2')
+tabung()
